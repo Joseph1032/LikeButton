@@ -22,7 +22,7 @@ export default React.createClass({
       text: ''
     })
   },
-  // handleCheck: function(list) {                 // for checkbox
+  // handleCheck: function(list) {
   //   this.state.list.filter(function(list){
   //     completed: this.state.completed
   //   }),
@@ -34,7 +34,7 @@ export default React.createClass({
   
     return (
       <div id="container">
-        <h1>todo</h1>
+        <h1>todos</h1>
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} type="text" placeholder="What needs to be done?" value={this.state.text}/>
           </form>
@@ -42,7 +42,7 @@ export default React.createClass({
           <div id="taskBody">
             <ul>
                 {this.state.list.map(function(val,i){
-                return <li key={i}>{val}</li>
+                return <li key={i}><input id="check" type="checkbox"/>{val}</li>
               })}
             </ul>
           </div> 
