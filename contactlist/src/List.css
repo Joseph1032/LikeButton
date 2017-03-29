@@ -1,0 +1,57 @@
+
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+
+h1 {
+	background-color:rgb(129,188,57);
+	height:50px;
+	width:400px;	
+	line-height: 50px;
+	font-size: 20px;
+	color:white;
+	text-indent:10px;
+	margin-left: 9.8%;
+}
+ul {
+	list-style: none;
+	margin-left: 6.5%;
+}
+li {								/* PeopleList Page 1 */
+	border-bottom:3px solid black;
+	border-color:rgb(231,231,231);
+	width:400px;
+	padding:5px;
+}
+.photo {
+	height:300px;
+	width: 500px;
+	margin: auto;
+	background-color: rgb(167,208,118);
+}
+#profile {
+	border-radius: 180%;
+	margin:5px;
+}
+#profilepic {						/* Second page */
+	position:relative;
+	margin-top:10%;
+	margin-left: 30%;
+	height:200px;
+	border-radius: 180%;
+}
+#back {
+	position:absolute;
+	width:50px;
+}
+#users li {					/* data information */
+	height:50px;
+	width: 510px;
+	padding:15px;
+	border-bottom:3px solid black;
+	border-color: rgb(231,231,231);
+}
+#users {
+	margin-top: 0%;			/* font-awesome */
+	margin-left: 26%;
+}
