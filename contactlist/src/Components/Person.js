@@ -1,7 +1,7 @@
 import React from 'react';
 import data from './data.json'
 
-console.log(data)
+
 export default React.createClass({
 	getInitialState() { 
 		return {
@@ -18,7 +18,7 @@ export default React.createClass({
 		return(
 			<div>
 				<div className="photo">
-					<button id="back" onClick={this.handleBack}>Back</button>
+					<button id="back" onClick={this.handleBack}><img alt='' src="back.png"/></button>
 					<img id="profilepic" alt={this.state.data.name.first + this.state.data.name.last} src={this.state.data.picture.medium} />
 				</div>
 				<ul id="users">
